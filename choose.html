@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BINOMIAL COEFFICIENT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="scripts/script2.js" defer>
+    </script>
+  </head>
+  <body>
+    <div class="super">
+      <div class="binomial-calculator">
+        <h1>(</h1>
+        <div class="input">
+          <form action="index.html" method="post">
+            <input onclick="this.select();" id="upper" type="text" name="upper-operand">
+          </form>
+          <form action="index.html" method="post">
+            <input onclick="this.select();" id="lower" type="text" name="lower-operand">
+          </form>
+        </div>
+        <h1>)</h1>
+        <button solveButton type="button" name="button">=</button>
+        <div class="output">
+          <div data-binomial-result class="result"></div>
+        </div>
+      </div>
+      <div class="navigation">
+        <a href="index.html" class="nav-button">
+          <button type="button" name="button">4-Function Calculator</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

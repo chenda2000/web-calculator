@@ -1,0 +1,122 @@
+body {
+  font-family: Sans-serif;
+  background-color: #00FF6C;
+  padding: 0;
+  margin: 0;
+}
+
+.super {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-around;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .prev-operand {
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.nav-button {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nav-button > button {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-button > button:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+input {
+  padding: 12px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.binomial-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.binomial-calculator .output {
+  min-width: 300px;
+  min-height: 70px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#upper, #lower {
+  width: 100px;
+  height: 50px;
+  font-size: 1.3rem;
+}
+
+.binomial-calculator > button {
+  margin: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.binomial-calculator > button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
